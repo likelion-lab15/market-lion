@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
-  <title>마켓라이언</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>마켓라이언</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- 로고 -->
+      <div class="header__logo">
+        <div class="logo">
+          <h1>
+            <img class="logo__img" src="./assets/main/headerTop/Kurly.png" alt="마켓컬리 로고"/>
+          </h1>
+        </div>
+        <button class="market"><a href="#" class="market__link">마켓칼리</a></button>
+        <button class="beauty"><a href="#" class="beauty__link">뷰티칼리</a></button>
+      </div>
+      <!-- 검색 폼 -->
+      <fieldset class="header__search">
+        <div class="search">
+          <input type="search" class="search__input" required placeholder="검색어를 입력해주세요"/>
+          <button type="submit" class="search__button">검색</button>
+        </div>
+      </fieldset>
+      <!-- 텍스트 링크 모음 -->
+      <ul class="header__member">
+        <li><span class="divider" aria-hidden="true"><a href="#">회원가입</a></span></li>
+        <li><span class="divider" aria-hidden="true">ㅣ<a href="#">로그인</a></span></li>
+        <li><span class="divider" aria-hidden="true">ㅣ<a href="#">고객센터</a></span></li>
+      </ul>
+      <!-- 아이콘 배지 -->
+      <div class="header__icon">
+        <div class="icon">
+          <div class="iconLocation">
+            <a href="#" class="iconLocation__link">
+              <img class="iconLocation__img" src="./assets/main/headerTop/Location.png" alt="배송지 등록 이미지" />
+            </a>
+          </div>
+          <div class="iconGood">
+            <a href="#" class="iconGood__link">
+              <img class="iconGood__img" src="./assets/main/headerTop/Heart.png" alt="찜 이미지" />
+            </a>
+          </div>
+          <div class="iconBasket">
+            <a href="#" class="iconBasket__link">
+              <img class="iconBasket__img" src="./assets/main/headerTop/Cart.png" alt="장바구니 이미지" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
