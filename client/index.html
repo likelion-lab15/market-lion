@@ -17,11 +17,38 @@
     <header class="header">
       <!-- 네비게이션 -->
       <nav class="navigation">
-        <h2 class="a11y-hidden">메인 메뉴</h2>
+        <h2 class="a11y-hidden">
+          <span></span>
+          <span>메인 메뉴</span>
+        </h2>
         <ul class="mainMenu">
           <li class="mainMenu__category">
-            <button type="button" class="categoryButton">카테고리</button>
-            <ul class="mainMenu__item">
+            <button type="button" class="categoryButton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_42_624)">
+                  <path
+                    class="hamburgerIcon"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0H16V1.7H0V0ZM0 6.15H16V7.85H0V6.15ZM0 12.3H16V14H0V12.3Z"
+                    fill="#333333"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_42_624">
+                    <rect width="16" height="14" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>카테고리</span>
+            </button>
+            <ul class="mainMenu__item a11y-hidden">
               <li><a href="/">선물하기</a></li>
               <li><a href="/">채소</a></li>
               <li><a href="/">과일 · 견과 · 쌀</a></li>
@@ -47,22 +74,23 @@
           </li>
           <li class="mainMenu__menu">
             <div class="menu-item">
-              <button type="button" class="menuButton">신상품</button>
+              <a href="#" class="menuButton"><span>신상품</span></a>
             </div>
             <div class="menu-item">
-              <button type="button" class="menuButton">베스트</button>
+              <a href="#" class="menuButton"><span>베스트</span></a>
             </div>
             <div class="menu-item">
-              <button type="button" class="menuButton">알뜰쇼핑</button>
+              <a href="#" class="menuButton"><span>알뜰쇼핑</span></a>
             </div>
             <div class="menu-item">
-              <button type="button" class="menuButton">특가/혜택</button>
+              <a href="#" class="menuButton"><span>특가/혜택</span></a>
             </div>
           </li>
           <li class="mainMenu__notice">
-            <button type="button" class="noticeButton">
-              <span class="">샛별・택배</span> 배송안내
-            </button>
+            <a href="#" class="noticeButton">
+              <span class="point">샛별・택배</span>
+              <span>배송안내</span>
+            </a>
           </li>
         </ul>
       </nav>

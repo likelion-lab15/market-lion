@@ -1,6 +1,8 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css%22");
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./main.css);
+@import url(./theme.css);
 
 /* 기본 스타일 */
 *,
@@ -17,4 +19,11 @@ legend {
   height: 1px;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
