@@ -30,35 +30,35 @@
 }
 
 .market__link {
-  text-decoration: none;
   color: var(--primary);
+  text-decoration: none;
 }
 
 .market__link::after {
-  content: "";
   position: absolute;
   width: 1px;
   height: 14px;
+  content: "";
   margin-top: 5px;
   margin-left: 8px;
   background-color: rgb(226, 226, 226);
 }
 
 .beauty__link {
-  text-decoration: none;
-  color: var(--gray-400);
   position: relative;
+  color: var(--gray-400);
+  text-decoration: none;
 }
 
 .beauty__link::after {
-  content: "";
   display: block;
-  background: url(../assets/main/headerTop/Vector.svg) 0 0 no-repeat;
   position: absolute;
-  width: 8px;
-  height: 10px;
   top: 3px;
   right: -13px;
+  width: 8px;
+  height: 10px;
+  background: url(../assets/main/headerTop/Vector.svg) 0 0 no-repeat;
+  content: "";
 }
 
 
@@ -67,18 +67,18 @@
   position: absolute;
   top: 45px;
   right: 320px;
+  width: 400px;
+  height: 48px;
   border: 1px solid var(--primary);
   border-radius: 4px;
   padding-top: 14px;
   padding-left: 14px;
-  width: 400px;
-  height: 48px;
 }
 
 .search__input {
   border: none;
-  background-color: transparent;
   letter-spacing: 1px;
+  background-color: transparent;
 }
 
 .search__input:focus {
@@ -86,12 +86,12 @@
 }
 
 .search__button {
-  border: 0;
-  background-color: transparent;
-  text-decoration: none;
   position: absolute;
   top: 5px;
   right: 0;
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /* 텍스트 링크 모음 */
@@ -109,8 +109,8 @@
 }
 
 .header__member * {
-  text-decoration: none;
   color: var(--content);
+  text-decoration: none;
 }
 
 .sign-btn {
@@ -131,14 +131,14 @@
 
 .related__list {
   visibility: hidden;
-  border: 1px solid var(--divider);
   position: absolute;
   top: 34px;
   right: 0;
+  z-index: 99;
   width: 120px;
   height: 96px;
+  border: 1px solid var(--divider);
   background-color: rgb(255, 255, 255);
-  z-index: 99;
 }
 
 .related__list li {
@@ -153,11 +153,11 @@
 /* 아이콘 배지 */
 .icon {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   position: absolute;
   top: 50px;
   right: 0;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .iconLocation {
