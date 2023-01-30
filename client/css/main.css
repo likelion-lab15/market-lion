@@ -1,5 +1,4 @@
 .header {
-  /* background: powderblue; */
   position: relative;
   width: 1050px;
   height: 125px;
@@ -11,12 +10,13 @@
 /* 로고 */
 .logo {
   position: absolute;
-  top: 53.5px;
+  top: 48.5px;
   left: 0;
+  cursor: pointer;
 }
 
 .header__logo {
-  padding-top: 58px;
+  padding-top: 55px;
   padding-left: 94px;
   font-weight: var(--bold);
 }
@@ -46,7 +46,7 @@
 
 .beauty__link {
   text-decoration: none;
-  color: #b5b5b5;
+  color: var(--gray-400);
   position: relative;
 }
 
@@ -65,7 +65,7 @@
 /* 검색 폼 */
 .search {
   position: absolute;
-  top: 53px;
+  top: 45px;
   right: 320px;
   border: 1px solid var(--primary);
   border-radius: 4px;
@@ -78,6 +78,11 @@
 .search__input {
   border: none;
   background-color: transparent;
+  letter-spacing: 1px;
+}
+
+.search__input:focus {
+  outline: none;
 }
 
 .search__button {
@@ -88,7 +93,6 @@
   top: 5px;
   right: 0;
 }
-
 
 /* 텍스트 링크 모음 */
 .header__member {
@@ -104,18 +108,18 @@
   font-size: var(--text-12);
 }
 
-.header__member a {
+.header__member * {
   text-decoration: none;
   color: var(--content);
 }
 
-.header__member a:nth-child(1) {
-  /* color: var(--primary); */
+.sign-btn {
+  color: var(--primary);
 }
 
 .divider {
   margin: 0 8px;
-  color: #D9D9D9;;
+  color: var(--divider);
 }
 
 .etc__img {
@@ -126,22 +130,24 @@
 }
 
 .related__list {
-  border: 1px solid #D9D9D9;
-  margin-top: 10px;
+  visibility: hidden;
+  border: 1px solid var(--divider);
+  position: absolute;
+  top: 34px;
+  right: 0;
   width: 120px;
   height: 96px;
-  position: absolute;
-  right: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 99;
 }
 
 .related__list li {
+  padding-top: 8px;
+  padding-left: 10px;
 }
 
-.related__list a {
-  color: var(--content);
-}
-
-.related:hover {
+.related:hover .related__list{
+  visibility: visible;
 }
 
 /* 아이콘 배지 */
@@ -150,7 +156,7 @@
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  top: 53px;
+  top: 50px;
   right: 0;
 }
 
@@ -161,4 +167,3 @@
 .iconBasket {
   margin-left: 20px;
 }
-
