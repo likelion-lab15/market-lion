@@ -8,6 +8,7 @@
   "bracketSpacing": true,
   "arrowParens": "avoid",
   "endOfLine": "auto",
-  "editor.formatOnSave": false,
+
+  "editor.formatOnSave": false, 
   "editor.wordWrap": "on"
 }
